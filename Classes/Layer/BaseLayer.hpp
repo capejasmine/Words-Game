@@ -29,10 +29,12 @@ public:
     
     void setBackGround(std::string path);
     
-    void onButtonClick(Ref* ref, TouchEventType type);
-private:
+    void onButtonClick(Ref* event, TouchEventType type);
+    
+public:
     Node* m_pRootNode;
     
+private:
     Sprite* m_pBgSprite;
 };
 

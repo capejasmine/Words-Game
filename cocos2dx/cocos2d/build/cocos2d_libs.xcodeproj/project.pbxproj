@@ -916,6 +916,8 @@
 		1AD71EF5180E27CF00808F54 /* CCPhysicsSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD71EEE180E27CF00808F54 /* CCPhysicsSprite.cpp */; };
 		1AD71EF6180E27CF00808F54 /* CCPhysicsSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD71EEF180E27CF00808F54 /* CCPhysicsSprite.h */; };
 		1AD71EF7180E27CF00808F54 /* CCPhysicsSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD71EEF180E27CF00808F54 /* CCPhysicsSprite.h */; };
+		26192E791D1001FF00C7A56E /* CSLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E771D1001FF00C7A56E /* CSLoader.cpp */; settings = {ASSET_TAGS = (); }; };
+		26192E7A1D1001FF00C7A56E /* CSLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 26192E781D1001FF00C7A56E /* CSLoader.h */; settings = {ASSET_TAGS = (); }; };
 		2905FA4018CF08D100240AA3 /* CocosGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2905F9E918CF08D000240AA3 /* CocosGUI.cpp */; };
 		2905FA4118CF08D100240AA3 /* CocosGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2905F9E918CF08D000240AA3 /* CocosGUI.cpp */; };
 		2905FA4218CF08D100240AA3 /* CocosGUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 2905F9EA18CF08D000240AA3 /* CocosGUI.h */; };
@@ -2291,6 +2293,8 @@
 		1AD71EED180E27CF00808F54 /* CCPhysicsDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPhysicsDebugNode.h; sourceTree = "<group>"; };
 		1AD71EEE180E27CF00808F54 /* CCPhysicsSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCPhysicsSprite.cpp; sourceTree = "<group>"; };
 		1AD71EEF180E27CF00808F54 /* CCPhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPhysicsSprite.h; sourceTree = "<group>"; };
+		26192E771D1001FF00C7A56E /* CSLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSLoader.cpp; sourceTree = "<group>"; };
+		26192E781D1001FF00C7A56E /* CSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoader.h; sourceTree = "<group>"; };
 		2905F9E918CF08D000240AA3 /* CocosGUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CocosGUI.cpp; sourceTree = "<group>"; };
 		2905F9EA18CF08D000240AA3 /* CocosGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosGUI.h; sourceTree = "<group>"; };
 		2905F9EB18CF08D000240AA3 /* GUIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIDefine.h; sourceTree = "<group>"; };
@@ -3013,6 +3017,8 @@
 		0634A4C4194B19E400E608AF /* ActionTimeline */ = {
 			isa = PBXGroup;
 			children = (
+				26192E771D1001FF00C7A56E /* CSLoader.cpp */,
+				26192E781D1001FF00C7A56E /* CSLoader.h */,
 				0634A4C5194B19E400E608AF /* CCActionTimeline.cpp */,
 				0634A4C6194B19E400E608AF /* CCActionTimeline.h */,
 				0634A4C7194B19E400E608AF /* CCActionTimelineCache.cpp */,
@@ -5284,6 +5290,7 @@
 				1A9DCA29180E6955007A3AD4 /* CCGLBufferedNode.h in Headers */,
 				50FCEBB118C72017004AD434 /* ScrollViewReader.h in Headers */,
 				50ABC0031926664800A911A9 /* CCLock.h in Headers */,
+				26192E7A1D1001FF00C7A56E /* CSLoader.h in Headers */,
 				B37510721823AC9F00B3BA6A /* CCPhysicsBodyInfo_chipmunk.h in Headers */,
 				50ABBE2D1925AB6F00A911A9 /* ccCArray.h in Headers */,
 				50FCEBA518C72017004AD434 /* ListViewReader.h in Headers */,
@@ -6289,6 +6296,7 @@
 				1A01C68418F57BE800EFE3A6 /* CCArray.cpp in Sources */,
 				1A570112180BC8EE0088DEC7 /* CCDrawNode.cpp in Sources */,
 				1A57011B180BC90D0088DEC7 /* CCGrabber.cpp in Sources */,
+				26192E791D1001FF00C7A56E /* CSLoader.cpp in Sources */,
 				1A57011F180BC90D0088DEC7 /* CCGrid.cpp in Sources */,
 				50FCEBA718C72017004AD434 /* LoadingBarReader.cpp in Sources */,
 				1A57019D180BCB590088DEC7 /* CCFont.cpp in Sources */,

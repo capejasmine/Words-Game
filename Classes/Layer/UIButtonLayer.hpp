@@ -13,7 +13,7 @@
 #include "ui/CocosGUI.h"
 #include "cocostudio/CCSGUIReader.h"
 #include "cocostudio/CocoStudio.h"
-#include "CBLayer.hpp"
+#include "CBLayer.hpp"
 
 using namespace cocostudio;
 using namespace cocos2d::ui;
@@ -21,14 +21,18 @@ USING_NS_CC;
 
 class UIButtonLayer: public CBLayer{
 public:
-    virtual bool init(std::string csbPath);
+    virtual bool init(std::string pathName);
     
-    static UIButtonLayer* craete(std::string csbPath);
+    static UIButtonLayer* craete(std::string pathName);
     
-    void onButtonClick(Ref* ref, TouchEventType type);
+    void onClick(Ref* ref,Widget::TouchEventType type);
+    
+    void setClikcForBtn(Node* root);
     
 private:
     static UIButtonLayer* layer;
+    
+    Node* m_pUiRoot;
 };
 
 #endif /* UIButtonLayer_hpp */
