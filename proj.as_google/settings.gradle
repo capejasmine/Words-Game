@@ -1,0 +1,2 @@
+include ':Words-Game'
+project(':Words-Game').projectDir = new File(settingsDir, 'app')
