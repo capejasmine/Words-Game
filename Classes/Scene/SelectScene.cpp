@@ -14,3 +14,15 @@ Scene* SelectScene::scene(){
     scene->addChild(layer);
     return scene;
 }
+
+bool SelectScene::init(){
+    if (!BaseLayer::initWithFile("")) {
+        return false;
+        
+    }
+    return true;
+}
+
+bool SelectScene::keybackKeyDown(){
+    return false;
+}

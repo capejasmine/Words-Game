@@ -13,9 +13,13 @@
 
 class ChineseScene : public BaseLayer{
 public:
+    virtual bool init();
+    
     static Scene* scene();
     
     CREATE_FUNC(ChineseScene);
+    
+    virtual bool keybackKeyDown();
 private:
     
 };

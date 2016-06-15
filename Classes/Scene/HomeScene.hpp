@@ -13,9 +13,13 @@
 
 class HomeScene : public BaseLayer{
 public:
+    virtual bool init();
+    
     static Scene* scene();
     
     CREATE_FUNC(HomeScene);
+    
+    virtual bool keybackKeyDown();
 private:
     
 };

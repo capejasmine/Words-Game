@@ -13,9 +13,13 @@
 
 class ListenScene : public BaseLayer{
 public:
+    virtual bool init();
+    
     static Scene* scene();
     
     CREATE_FUNC(ListenScene);
+    
+    virtual bool keybackKeyDown();
 private:
     
 };

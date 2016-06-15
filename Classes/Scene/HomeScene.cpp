@@ -14,3 +14,18 @@ Scene* HomeScene::scene(){
     scene->addChild(layer);
     return scene;
 }
+
+bool HomeScene::init(){
+    if (!BaseLayer::initWithFile("")) {
+        return false;
+        
+    }
+    
+    this->setBackGround("bg.png");
+    
+    return true;
+}
+
+bool HomeScene::keybackKeyDown(){
+    return false;
+}

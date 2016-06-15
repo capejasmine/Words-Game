@@ -13,9 +13,13 @@
 
 class SelectScene : public BaseLayer{
 public:
+    virtual bool init();
+    
     static Scene* scene();
     
     CREATE_FUNC(SelectScene);
+    
+    virtual bool keybackKeyDown();
 private:
     
 };

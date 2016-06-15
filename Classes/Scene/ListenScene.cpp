@@ -14,3 +14,15 @@ Scene* ListenScene::scene(){
     scene->addChild(layer);
     return scene;
 }
+
+bool ListenScene::init(){
+    if (!BaseLayer::initWithFile("")) {
+        return false;
+        
+    }
+    return true;
+}
+
+bool ListenScene::keybackKeyDown(){
+    return false;
+}

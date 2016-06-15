@@ -14,6 +14,7 @@
 #include "cocostudio/CCSGUIReader.h"
 #include "cocostudio/CocoStudio.h"
 #include "CBLayer.hpp"
+#include "GameController.hpp"
 
 using namespace cocostudio;
 using namespace cocos2d::ui;

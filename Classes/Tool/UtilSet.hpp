@@ -17,6 +17,15 @@ USING_NS_CC;
 
 #define   xDirector       Director::getInstance()
 #define   xGAME           GameController::getInstance()
+#define   xUtil           UtilSet::getInstance()
+
+#define   LOCK_LAYER      0x008801
+
+class UtilSet : public Ref, public SingleT<UtilSet>{
+public:
+    void lockScreen();
+    void unlockScreen();
+};
 
 
 #endif /* UtilSet_hpp */

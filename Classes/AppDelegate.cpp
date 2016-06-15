@@ -1,4 +1,5 @@
 #include "AppDelegate.h"
+#include "GameController.hpp"
 
 
 USING_NS_CC;
@@ -20,19 +21,30 @@ bool AppDelegate::applicationDidFinishLaunching() {
         director->setOpenGLView(glview);
     }
     
-    glview->setDesignResolutionSize(960, 720, ResolutionPolicy::NO_BORDER);
+    glview->setDesignResolutionSize(960, 640, ResolutionPolicy::NO_BORDER);
 
     // turn on display FPS
     director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
+    
+    // add resource search paths
+    std::vector<std::string> paths;
+    paths.push_back("fonts/");
+    paths.push_back("particle/");
+    paths.push_back("public/");
+    paths.push_back("sound/");
+    paths.push_back("studio/");
+    paths.push_back("studio/Animation");
+    paths.push_back("studio/UI");
+    FileUtils::getInstance()->setSearchPaths(paths);
 
     // create a scene. it's an autorelease object
     
+    xGAME->enterHomeScene();
 
     // run
-    
 
     return true;
 }

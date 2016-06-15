@@ -13,11 +13,12 @@ bool BaseLayer::initWithFile(std::string pathNmae){
         return false;
     }
     
-    m_pRootNode = GUIReader::getInstance()->widgetFromJsonFile(pathNmae.c_str());
-    if(m_pRootNode){
-        this->addChild(m_pRootNode, kUi);
+    if(pathNmae != ""){
+        m_pRootNode = GUIReader::getInstance()->widgetFromJsonFile(pathNmae.c_str());
+        if(m_pRootNode){
+            this->addChild(m_pRootNode, kUi);
+        }
     }
-    
     return true;
 }
 

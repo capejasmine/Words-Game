@@ -9,7 +9,6 @@
 #ifndef GameController_hpp
 #define GameController_hpp
 
-#include "SingleT.hpp"
 #include "HomeScene.hpp"
 #include "ChooseScene.hpp"
 #include "ViewScene.hpp"

@@ -12,7 +12,7 @@ bool CBLayer::init(){
     bool bRet = false;
     do
     {
-        CC_BREAK_IF(!CBLayer::init());
+        CC_BREAK_IF(!Layer::init());
         
         m_pBgLayer = Layer::create();
         this->addChild(m_pBgLayer,kBackground);
@@ -21,7 +21,7 @@ bool CBLayer::init(){
         this->addChild(m_pContentLayer, kContent);
         
         m_pUiLayer = Layer::create();
-        this->addChild(m_pBgLayer,kUi);
+        this->addChild(m_pUiLayer,kUi);
         
         m_pPopLayer = Layer::create();
         this->addChild(m_pPopLayer,kPop);

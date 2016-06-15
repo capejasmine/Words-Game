@@ -13,9 +13,13 @@
 
 class ViewScene : public BaseLayer{
 public:
+    virtual bool init();
+    
     static Scene* scene();
     
     CREATE_FUNC(ViewScene);
+    
+    virtual bool keybackKeyDown();
 private:
 
 };

@@ -9,7 +9,7 @@
 #include "GameController.hpp"
 
 void GameController::enterLoading(){
-    if (xDirector->getRunningScene()) {
+    if (!xDirector->getRunningScene()) {
         xDirector->runWithScene(Loading::scene());
     }else
     {
@@ -19,7 +19,7 @@ void GameController::enterLoading(){
 }
 
 void GameController::enterLoadingLayer(){
-    if (xDirector->getRunningScene()) {
+    if (!xDirector->getRunningScene()) {
         xDirector->runWithScene(LoadingLayer::scene());
     }else
     {
@@ -29,7 +29,7 @@ void GameController::enterLoadingLayer(){
 }
 
 void GameController::enterHomeScene(){
-    if (xDirector->getRunningScene()) {
+    if (!xDirector->getRunningScene()) {
         xDirector->runWithScene(HomeScene::scene());
     }else
     {
@@ -39,7 +39,7 @@ void GameController::enterHomeScene(){
 }
 
 void GameController::enterChooseScene(){
-    if (xDirector->getRunningScene()) {
+    if (!xDirector->getRunningScene()) {
         xDirector->runWithScene(ChooseScene::scene());
     }else
     {
@@ -49,7 +49,7 @@ void GameController::enterChooseScene(){
 }
 
 void GameController::enterViewScene(){
-    if (xDirector->getRunningScene()) {
+    if (!xDirector->getRunningScene()) {
         xDirector->runWithScene(ViewScene::scene());
     }else
     {
@@ -59,7 +59,7 @@ void GameController::enterViewScene(){
 }
 
 void GameController::enterListenScene(){
-    if (xDirector->getRunningScene()) {
+    if (!xDirector->getRunningScene()) {
         xDirector->runWithScene(ListenScene::scene());
     }else
     {
@@ -69,7 +69,7 @@ void GameController::enterListenScene(){
 }
 
 void GameController::enterChineseScene(){
-    if (xDirector->getRunningScene()) {
+    if (!xDirector->getRunningScene()) {
         xDirector->runWithScene(ChineseScene::scene());
     }else
     {
@@ -79,7 +79,7 @@ void GameController::enterChineseScene(){
 }
 
 void GameController::enterSelectScene(){
-    if (xDirector->getRunningScene()) {
+    if (!xDirector->getRunningScene()) {
         xDirector->runWithScene(SelectScene::scene());
     }else
     {

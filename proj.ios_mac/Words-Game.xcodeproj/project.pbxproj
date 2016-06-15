@@ -18,9 +18,6 @@
 		1AC6FB31180E99EB004C840B /* libcocos2dx-extensions iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB09180E9839004C840B /* libcocos2dx-extensions iOS.a */; };
 		1AC6FB32180E99EB004C840B /* libCocosDenshion iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB0F180E9839004C840B /* libCocosDenshion iOS.a */; };
 		1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */; };
-		1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B916D35E4900DB1158 /* CloseNormal.png */; };
-		1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */; };
-		1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */; };
 		26192E651D0FB27B00C7A56E /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E631D0FB27B00C7A56E /* HomeScene.cpp */; settings = {ASSET_TAGS = (); }; };
 		26192E681D0FB29F00C7A56E /* BaseLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E661D0FB29F00C7A56E /* BaseLayer.cpp */; settings = {ASSET_TAGS = (); }; };
 		26192E6C1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E6A1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -36,15 +33,17 @@
 		261A648F1D10E31300E63CAE /* UITools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A648D1D10E31300E63CAE /* UITools.cpp */; settings = {ASSET_TAGS = (); }; };
 		261A64921D10E72400E63CAE /* SelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64901D10E72400E63CAE /* SelectScene.cpp */; settings = {ASSET_TAGS = (); }; };
 		261A64961D10EDAD00E63CAE /* UtilSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64941D10EDAD00E63CAE /* UtilSet.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A649F1D11015F00E63CAE /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 261A649A1D11015F00E63CAE /* fonts */; settings = {ASSET_TAGS = (); }; };
+		261A64A01D11015F00E63CAE /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 261A649B1D11015F00E63CAE /* particle */; settings = {ASSET_TAGS = (); }; };
+		261A64A11D11015F00E63CAE /* public in Resources */ = {isa = PBXBuildFile; fileRef = 261A649C1D11015F00E63CAE /* public */; settings = {ASSET_TAGS = (); }; };
+		261A64A21D11015F00E63CAE /* sound in Resources */ = {isa = PBXBuildFile; fileRef = 261A649D1D11015F00E63CAE /* sound */; settings = {ASSET_TAGS = (); }; };
+		261A64A31D11015F00E63CAE /* studio in Resources */ = {isa = PBXBuildFile; fileRef = 261A649E1D11015F00E63CAE /* studio */; settings = {ASSET_TAGS = (); }; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
 		503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FF17EB989F00D1A890 /* RootViewController.mm */; };
 		503AE10517EB98FF00D1A890 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		503AE11217EB99EE00D1A890 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11117EB99EE00D1A890 /* libcurl.dylib */; };
-		5087E75317EB910900C73F5D /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B916D35E4900DB1158 /* CloseNormal.png */; };
-		5087E75417EB910900C73F5D /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */; };
-		5087E75517EB910900C73F5D /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */; };
 		5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */; };
 		5087E76717EB910900C73F5D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		A20FFA221B3D0CD500A08F52 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A20FFA121B3D0CD500A08F52 /* Default-568h@2x.png */; };
@@ -251,9 +250,6 @@
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2dx/cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		1AFAF8B416D35DE700DB1158 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
-		1AFAF8B916D35E4900DB1158 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
-		1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
-		1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Words-Game iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Words-Game iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26192E631D0FB27B00C7A56E /* HomeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HomeScene.cpp; sourceTree = "<group>"; };
 		26192E641D0FB27B00C7A56E /* HomeScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HomeScene.hpp; sourceTree = "<group>"; };
@@ -287,6 +283,11 @@
 		261A64911D10E72400E63CAE /* SelectScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SelectScene.hpp; sourceTree = "<group>"; };
 		261A64941D10EDAD00E63CAE /* UtilSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UtilSet.cpp; sourceTree = "<group>"; };
 		261A64951D10EDAD00E63CAE /* UtilSet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UtilSet.hpp; sourceTree = "<group>"; };
+		261A649A1D11015F00E63CAE /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		261A649B1D11015F00E63CAE /* particle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = particle; sourceTree = "<group>"; };
+		261A649C1D11015F00E63CAE /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		261A649D1D11015F00E63CAE /* sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sound; sourceTree = "<group>"; };
+		261A649E1D11015F00E63CAE /* studio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = studio; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -523,11 +524,11 @@
 		26192E5E1D0FB21700C7A56E /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				261A64931D10E72900E63CAE /* Game */,
 				26192E631D0FB27B00C7A56E /* HomeScene.cpp */,
 				26192E641D0FB27B00C7A56E /* HomeScene.hpp */,
 				261A647D1D10E27C00E63CAE /* ChooseScene.cpp */,
 				261A647E1D10E27C00E63CAE /* ChooseScene.hpp */,
+				261A64931D10E72900E63CAE /* Game */,
 			);
 			name = Scene;
 			path = ../Classes/Scene;
@@ -664,9 +665,11 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
-				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
-				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
+				261A649A1D11015F00E63CAE /* fonts */,
+				261A649B1D11015F00E63CAE /* particle */,
+				261A649C1D11015F00E63CAE /* public */,
+				261A649D1D11015F00E63CAE /* sound */,
+				261A649E1D11015F00E63CAE /* studio */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -869,22 +872,24 @@
 			files = (
 				A20FFA261B3D0CD500A08F52 /* AppIcon29x29@2x.png in Resources */,
 				A20FFA271B3D0CD500A08F52 /* AppIcon40x40.png in Resources */,
+				261A64A01D11015F00E63CAE /* particle in Resources */,
 				A20FFA241B3D0CD500A08F52 /* Default@2x.png in Resources */,
-				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				A20FFA2F1B3D0CD500A08F52 /* AppIcon76x76.png in Resources */,
 				A20FFA2E1B3D0CD500A08F52 /* AppIcon72x72@2x.png in Resources */,
 				A20FFA221B3D0CD500A08F52 /* Default-568h@2x.png in Resources */,
-				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				261A64A11D11015F00E63CAE /* public in Resources */,
 				A20FFA2A1B3D0CD500A08F52 /* AppIcon57x57@2x.png in Resources */,
 				A20FFA321B3D0CE900A08F52 /* Info.plist in Resources */,
 				A20FFA291B3D0CD500A08F52 /* AppIcon57x57.png in Resources */,
 				A20FFA281B3D0CD500A08F52 /* AppIcon40x40@2x.png in Resources */,
 				A20FFA251B3D0CD500A08F52 /* AppIcon29x29.png in Resources */,
+				261A649F1D11015F00E63CAE /* fonts in Resources */,
 				A20FFA2D1B3D0CD500A08F52 /* AppIcon72x72.png in Resources */,
 				A20FFA2C1B3D0CD500A08F52 /* AppIcon60x60@2x.png in Resources */,
 				A20FFA301B3D0CD500A08F52 /* AppIcon76x76@2x.png in Resources */,
-				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				A20FFA2B1B3D0CD500A08F52 /* AppIcon60x60.png in Resources */,
+				261A64A21D11015F00E63CAE /* sound in Resources */,
+				261A64A31D11015F00E63CAE /* studio in Resources */,
 				A20FFA231B3D0CD500A08F52 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -893,10 +898,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
-				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
-				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

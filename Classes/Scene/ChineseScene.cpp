@@ -14,3 +14,15 @@ Scene* ChineseScene::scene(){
     scene->addChild(layer);
     return scene;
 }
+
+bool ChineseScene::init(){
+    if (!BaseLayer::initWithFile("")) {
+        return false;
+        
+    }
+    return true;
+}
+
+bool ChineseScene::keybackKeyDown(){
+    return false;
+}

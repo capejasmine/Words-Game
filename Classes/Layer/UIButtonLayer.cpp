@@ -46,11 +46,11 @@ void UIButtonLayer::onClick(Ref* ref,Widget::TouchEventType type){
     }
     auto btn = static_cast<Button*>(ref);
     std::string name = btn->getName();
-    if (name.compare("")) {
-        
+    if (name.compare("home")) {
+        xGAME->enterHomeScene();
     }
-    else if (name.compare("")){
-        
+    else if (name.compare("choose")){
+        xGAME->enterChooseScene();
     }
     else if (name.compare("")){
         
