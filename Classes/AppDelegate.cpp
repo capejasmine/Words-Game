@@ -38,6 +38,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     paths.push_back("studio/");
     paths.push_back("studio/Animation");
     paths.push_back("studio/UI");
+    paths.push_back("game/chinese/");
+    paths.push_back("game/listen/");
+    paths.push_back("game/select/");
+    paths.push_back("game/view/");
+    
+    
     FileUtils::getInstance()->setSearchPaths(paths);
 
     // create a scene. it's an autorelease object

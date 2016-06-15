@@ -16,8 +16,10 @@
 #include "cocostudio/CCSGUIReader.h"
 #include "cocostudio/CocoStudio.h"
 
+
 using namespace cocostudio;
 using namespace cocos2d::ui;
+using namespace std;
 USING_NS_CC;
 
 class BaseLayer : public CBLayer, KeypadDelegate{
@@ -32,7 +34,7 @@ public:
     void onButtonClick(Ref* event, TouchEventType type);
     
 public:
-    Node* m_pRootNode;
+    Widget* m_pRootNode;
     
 private:
     Sprite* m_pBgSprite;

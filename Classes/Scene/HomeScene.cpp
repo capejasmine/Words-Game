@@ -22,8 +22,25 @@ bool HomeScene::init(){
     }
     
     this->setBackGround("bg.png");
+    initUI();
     
     return true;
+}
+
+void HomeScene::initUI(){
+    auto start = (Button*)(Helper::seekWidgetByName(m_pRootNode, "start"));
+    start->addTouchEventListener(CC_CALLBACK_2(HomeScene::onClick, this));
+    
+}
+
+void HomeScene::onClick(Ref* ref, Widget::TouchEventType type){
+    if(Widget::TouchEventType::ENDED != type) return;
+    
+    Widget* target = static_cast<Widget*>(ref);
+    string name = target->getName();
+    if (name.compare("start") == 0) {
+        xGAME->enterChooseScene();
+    }
 }
 
 bool HomeScene::keybackKeyDown(){

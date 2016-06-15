@@ -52,8 +52,8 @@ void UIButtonLayer::onClick(Ref* ref,Widget::TouchEventType type){
     else if (name.compare("choose")){
         xGAME->enterChooseScene();
     }
-    else if (name.compare("")){
-        
+    else if (name.compare("music")){
+        xAudio->changeMode();
     }
 }
 

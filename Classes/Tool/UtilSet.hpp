@@ -11,6 +11,7 @@
 
 #include "cocos2d.h"
 #include "GameController.hpp"
+#include "AudioController.hpp"
 #include <stdio.h>
 
 USING_NS_CC;
@@ -18,6 +19,7 @@ USING_NS_CC;
 #define   xDirector       Director::getInstance()
 #define   xGAME           GameController::getInstance()
 #define   xUtil           UtilSet::getInstance()
+#define   xAudio          AudioController::getInstance()
 
 #define   LOCK_LAYER      0x008801
 

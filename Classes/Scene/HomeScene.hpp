@@ -10,6 +10,8 @@
 #define HomeScene_hpp
 
 #include "BaseLayer.hpp"
+#include "UtilSet.hpp"
+
 
 class HomeScene : public BaseLayer{
 public:
@@ -20,6 +22,10 @@ public:
     CREATE_FUNC(HomeScene);
     
     virtual bool keybackKeyDown();
+    
+    void initUI();
+    
+    void onClick(Ref* ref, Widget::TouchEventType type);
 private:
     
 };

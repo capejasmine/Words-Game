@@ -38,6 +38,8 @@
 		261A64A11D11015F00E63CAE /* public in Resources */ = {isa = PBXBuildFile; fileRef = 261A649C1D11015F00E63CAE /* public */; settings = {ASSET_TAGS = (); }; };
 		261A64A21D11015F00E63CAE /* sound in Resources */ = {isa = PBXBuildFile; fileRef = 261A649D1D11015F00E63CAE /* sound */; settings = {ASSET_TAGS = (); }; };
 		261A64A31D11015F00E63CAE /* studio in Resources */ = {isa = PBXBuildFile; fileRef = 261A649E1D11015F00E63CAE /* studio */; settings = {ASSET_TAGS = (); }; };
+		261A64A61D1144EF00E63CAE /* AudioController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64A41D1144EF00E63CAE /* AudioController.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A64A81D1149E600E63CAE /* game in Resources */ = {isa = PBXBuildFile; fileRef = 261A64A71D1149E600E63CAE /* game */; settings = {ASSET_TAGS = (); }; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -288,6 +290,9 @@
 		261A649C1D11015F00E63CAE /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		261A649D1D11015F00E63CAE /* sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sound; sourceTree = "<group>"; };
 		261A649E1D11015F00E63CAE /* studio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = studio; sourceTree = "<group>"; };
+		261A64A41D1144EF00E63CAE /* AudioController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioController.cpp; sourceTree = "<group>"; };
+		261A64A51D1144EF00E63CAE /* AudioController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioController.hpp; sourceTree = "<group>"; };
+		261A64A71D1149E600E63CAE /* game */ = {isa = PBXFileReference; lastKnownFileType = folder; path = game; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -496,6 +501,8 @@
 		26192E5C1D0FB21700C7A56E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				261A64A41D1144EF00E63CAE /* AudioController.cpp */,
+				261A64A51D1144EF00E63CAE /* AudioController.hpp */,
 				261A64891D10E2D400E63CAE /* GameController.cpp */,
 				261A648A1D10E2D400E63CAE /* GameController.hpp */,
 			);
@@ -665,6 +672,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				261A64A71D1149E600E63CAE /* game */,
 				261A649A1D11015F00E63CAE /* fonts */,
 				261A649B1D11015F00E63CAE /* particle */,
 				261A649C1D11015F00E63CAE /* public */,
@@ -880,6 +888,7 @@
 				261A64A11D11015F00E63CAE /* public in Resources */,
 				A20FFA2A1B3D0CD500A08F52 /* AppIcon57x57@2x.png in Resources */,
 				A20FFA321B3D0CE900A08F52 /* Info.plist in Resources */,
+				261A64A81D1149E600E63CAE /* game in Resources */,
 				A20FFA291B3D0CD500A08F52 /* AppIcon57x57.png in Resources */,
 				A20FFA281B3D0CD500A08F52 /* AppIcon40x40@2x.png in Resources */,
 				A20FFA251B3D0CD500A08F52 /* AppIcon29x29.png in Resources */,
@@ -911,6 +920,7 @@
 			files = (
 				261A648F1D10E31300E63CAE /* UITools.cpp in Sources */,
 				26192E651D0FB27B00C7A56E /* HomeScene.cpp in Sources */,
+				261A64A61D1144EF00E63CAE /* AudioController.cpp in Sources */,
 				261A648B1D10E2D400E63CAE /* GameController.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				26192E6C1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp in Sources */,
