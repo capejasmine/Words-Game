@@ -7,3 +7,10 @@
 //
 
 #include "HomeScene.hpp"
+
+Scene* HomeScene::scene(){
+    Scene* scene = Scene::create();
+    HomeScene* layer = HomeScene::create();
+    scene->addChild(layer);
+    return scene;
+}

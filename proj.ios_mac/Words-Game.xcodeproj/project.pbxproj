@@ -26,6 +26,16 @@
 		26192E6C1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E6A1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp */; settings = {ASSET_TAGS = (); }; };
 		26192E731D0FDAEF00C7A56E /* CBLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E711D0FDAEF00C7A56E /* CBLayer.cpp */; settings = {ASSET_TAGS = (); }; };
 		26192E761D0FF48200C7A56E /* UIButtonLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E741D0FF48200C7A56E /* UIButtonLayer.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A64771D10E26000E63CAE /* ViewScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64751D10E26000E63CAE /* ViewScene.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A647C1D10E27000E63CAE /* ListenScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A647A1D10E27000E63CAE /* ListenScene.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A647F1D10E27C00E63CAE /* ChooseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A647D1D10E27C00E63CAE /* ChooseScene.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A64821D10E28E00E63CAE /* ChineseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64801D10E28E00E63CAE /* ChineseScene.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A64851D10E2B600E63CAE /* Loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64831D10E2B600E63CAE /* Loading.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A64881D10E2C200E63CAE /* LoadingLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64861D10E2C200E63CAE /* LoadingLayer.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A648B1D10E2D400E63CAE /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64891D10E2D400E63CAE /* GameController.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A648F1D10E31300E63CAE /* UITools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A648D1D10E31300E63CAE /* UITools.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A64921D10E72400E63CAE /* SelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64901D10E72400E63CAE /* SelectScene.cpp */; settings = {ASSET_TAGS = (); }; };
+		261A64961D10EDAD00E63CAE /* UtilSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64941D10EDAD00E63CAE /* UtilSet.cpp */; settings = {ASSET_TAGS = (); }; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -256,6 +266,27 @@
 		26192E721D0FDAEF00C7A56E /* CBLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CBLayer.hpp; sourceTree = "<group>"; };
 		26192E741D0FF48200C7A56E /* UIButtonLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIButtonLayer.cpp; sourceTree = "<group>"; };
 		26192E751D0FF48200C7A56E /* UIButtonLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UIButtonLayer.hpp; sourceTree = "<group>"; };
+		261A64751D10E26000E63CAE /* ViewScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ViewScene.cpp; sourceTree = "<group>"; };
+		261A64761D10E26000E63CAE /* ViewScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ViewScene.hpp; sourceTree = "<group>"; };
+		261A647A1D10E27000E63CAE /* ListenScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListenScene.cpp; sourceTree = "<group>"; };
+		261A647B1D10E27000E63CAE /* ListenScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ListenScene.hpp; sourceTree = "<group>"; };
+		261A647D1D10E27C00E63CAE /* ChooseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChooseScene.cpp; sourceTree = "<group>"; };
+		261A647E1D10E27C00E63CAE /* ChooseScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChooseScene.hpp; sourceTree = "<group>"; };
+		261A64801D10E28E00E63CAE /* ChineseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChineseScene.cpp; sourceTree = "<group>"; };
+		261A64811D10E28E00E63CAE /* ChineseScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChineseScene.hpp; sourceTree = "<group>"; };
+		261A64831D10E2B600E63CAE /* Loading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Loading.cpp; sourceTree = "<group>"; };
+		261A64841D10E2B600E63CAE /* Loading.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Loading.hpp; sourceTree = "<group>"; };
+		261A64861D10E2C200E63CAE /* LoadingLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingLayer.cpp; sourceTree = "<group>"; };
+		261A64871D10E2C200E63CAE /* LoadingLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LoadingLayer.hpp; sourceTree = "<group>"; };
+		261A64891D10E2D400E63CAE /* GameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameController.cpp; sourceTree = "<group>"; };
+		261A648A1D10E2D400E63CAE /* GameController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameController.hpp; sourceTree = "<group>"; };
+		261A648C1D10E31300E63CAE /* UIHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIHeader.h; sourceTree = "<group>"; };
+		261A648D1D10E31300E63CAE /* UITools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITools.cpp; sourceTree = "<group>"; };
+		261A648E1D10E31300E63CAE /* UITools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITools.h; sourceTree = "<group>"; };
+		261A64901D10E72400E63CAE /* SelectScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectScene.cpp; sourceTree = "<group>"; };
+		261A64911D10E72400E63CAE /* SelectScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SelectScene.hpp; sourceTree = "<group>"; };
+		261A64941D10EDAD00E63CAE /* UtilSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UtilSet.cpp; sourceTree = "<group>"; };
+		261A64951D10EDAD00E63CAE /* UtilSet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UtilSet.hpp; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -464,6 +495,8 @@
 		26192E5C1D0FB21700C7A56E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				261A64891D10E2D400E63CAE /* GameController.cpp */,
+				261A648A1D10E2D400E63CAE /* GameController.hpp */,
 			);
 			name = Controller;
 			path = ../Classes/Controller;
@@ -478,6 +511,10 @@
 				26192E721D0FDAEF00C7A56E /* CBLayer.hpp */,
 				26192E741D0FF48200C7A56E /* UIButtonLayer.cpp */,
 				26192E751D0FF48200C7A56E /* UIButtonLayer.hpp */,
+				261A64831D10E2B600E63CAE /* Loading.cpp */,
+				261A64841D10E2B600E63CAE /* Loading.hpp */,
+				261A64861D10E2C200E63CAE /* LoadingLayer.cpp */,
+				261A64871D10E2C200E63CAE /* LoadingLayer.hpp */,
 			);
 			name = Layer;
 			path = ../Classes/Layer;
@@ -486,8 +523,11 @@
 		26192E5E1D0FB21700C7A56E /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				261A64931D10E72900E63CAE /* Game */,
 				26192E631D0FB27B00C7A56E /* HomeScene.cpp */,
 				26192E641D0FB27B00C7A56E /* HomeScene.hpp */,
+				261A647D1D10E27C00E63CAE /* ChooseScene.cpp */,
+				261A647E1D10E27C00E63CAE /* ChooseScene.hpp */,
 			);
 			name = Scene;
 			path = ../Classes/Scene;
@@ -496,6 +536,11 @@
 		26192E5F1D0FB21700C7A56E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				261A648C1D10E31300E63CAE /* UIHeader.h */,
+				261A648D1D10E31300E63CAE /* UITools.cpp */,
+				261A648E1D10E31300E63CAE /* UITools.h */,
+				261A64941D10EDAD00E63CAE /* UtilSet.cpp */,
+				261A64951D10EDAD00E63CAE /* UtilSet.hpp */,
 			);
 			name = Tool;
 			path = ../Classes/Tool;
@@ -510,6 +555,21 @@
 			);
 			name = Widget;
 			path = ../Classes/Widget;
+			sourceTree = "<group>";
+		};
+		261A64931D10E72900E63CAE /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				261A64751D10E26000E63CAE /* ViewScene.cpp */,
+				261A64761D10E26000E63CAE /* ViewScene.hpp */,
+				261A647A1D10E27000E63CAE /* ListenScene.cpp */,
+				261A647B1D10E27000E63CAE /* ListenScene.hpp */,
+				261A64801D10E28E00E63CAE /* ChineseScene.cpp */,
+				261A64811D10E28E00E63CAE /* ChineseScene.hpp */,
+				261A64901D10E72400E63CAE /* SelectScene.cpp */,
+				261A64911D10E72400E63CAE /* SelectScene.hpp */,
+			);
+			name = Game;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -847,15 +907,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261A648F1D10E31300E63CAE /* UITools.cpp in Sources */,
 				26192E651D0FB27B00C7A56E /* HomeScene.cpp in Sources */,
+				261A648B1D10E2D400E63CAE /* GameController.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				26192E6C1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp in Sources */,
+				261A64961D10EDAD00E63CAE /* UtilSet.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				261A64921D10E72400E63CAE /* SelectScene.cpp in Sources */,
+				261A64851D10E2B600E63CAE /* Loading.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				26192E761D0FF48200C7A56E /* UIButtonLayer.cpp in Sources */,
 				26192E681D0FB29F00C7A56E /* BaseLayer.cpp in Sources */,
+				261A647F1D10E27C00E63CAE /* ChooseScene.cpp in Sources */,
 				26192E731D0FDAEF00C7A56E /* CBLayer.cpp in Sources */,
+				261A647C1D10E27000E63CAE /* ListenScene.cpp in Sources */,
+				261A64881D10E2C200E63CAE /* LoadingLayer.cpp in Sources */,
+				261A64821D10E28E00E63CAE /* ChineseScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				261A64771D10E26000E63CAE /* ViewScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

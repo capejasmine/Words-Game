@@ -9,6 +9,15 @@
 #ifndef HomeScene_hpp
 #define HomeScene_hpp
 
-#include <stdio.h>
+#include "BaseLayer.hpp"
+
+class HomeScene : public BaseLayer{
+public:
+    static Scene* scene();
+    
+    CREATE_FUNC(HomeScene);
+private:
+    
+};
 
 #endif /* HomeScene_hpp */
