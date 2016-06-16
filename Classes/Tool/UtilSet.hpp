@@ -20,6 +20,7 @@ USING_NS_CC;
 #define   xGAME           GameController::getInstance()
 #define   xUtil           UtilSet::getInstance()
 #define   xAudio          AudioController::getInstance()
+#define   xData           GameData::getInstance()
 
 #define   LOCK_LAYER      0x008801
 

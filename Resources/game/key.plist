@@ -2,8 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Fruit</key>
+	<array>
+		<string>pear</string>
+		<string>apple</string>
+	</array>
 	<key>Animal</key>
 	<array>
+		<string>cat</string>
 		<string>dog</string>
 	</array>
 </dict>
