@@ -15,9 +15,12 @@
 #include "Appconfig.hpp"
 
 #define     xData      GameData::getInstance()
+#define     xUser      UserDefault::getInstance()
 
 USING_NS_CC;
 using namespace std;
+
+typedef  map<string, int>  gameType;
 
 class GameData : public SingleT<GameData>{
 public:
@@ -46,7 +49,6 @@ public:
     void addRecord(){
         m_iRecord++;
     }
-    
 private:
     ValueMap m_KeyRoot;
     
@@ -61,6 +63,8 @@ private:
     ItemType m_ItemType;
     
     int m_iRecord = 0;
+    
+    Vector<string> m_vItemsType;
 };
 
 #endif /* GameData_hpp */
