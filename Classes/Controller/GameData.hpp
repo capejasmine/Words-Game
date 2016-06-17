@@ -16,6 +16,7 @@
 
 #define     xData      GameData::getInstance()
 #define     xUser      UserDefault::getInstance()
+#define     xFile      FileUtils::getInstance()
 
 USING_NS_CC;
 using namespace std;
@@ -32,7 +33,7 @@ public:
     
     string getItemNameFromType(ItemType type);
     
-    string getDataFromKey();
+    string getData();
     
     string getSelectData();
     
@@ -49,6 +50,10 @@ public:
     void addRecord(){
         m_iRecord++;
     }
+    
+    bool isRecordExit();
+    
+    void removeRocord();
 private:
     ValueMap m_KeyRoot;
     
@@ -57,6 +62,8 @@ private:
     ValueMap m_SelectRoot;
     
     ValueMap m_ChineseRoot;
+    
+    ValueMap m_RecordRoot;
     //  游戏方式
     GameType m_GameType;
     
@@ -64,7 +71,7 @@ private:
     
     int m_iRecord = 0;
     
-    Vector<string> m_vItemsType;
+    vector<string> m_vItemsType;
 };
 
 #endif /* GameData_hpp */
