@@ -42,6 +42,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     paths.push_back("game/listen/");
     paths.push_back("game/select/");
     paths.push_back("game/view/");
+    paths.push_back("game");
     
     
     FileUtils::getInstance()->setSearchPaths(paths);

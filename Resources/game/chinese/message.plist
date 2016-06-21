@@ -3,6 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>dog</key>
-	<string>&quot;words&quot;</string>
+	<string>cute dog</string>
+	<key>cat</key>
+	<string>cute cat</string>
 </dict>
 </plist>

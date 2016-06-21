@@ -6,16 +6,33 @@
 //
 //
 
+// 1  关卡选择 设置 游戏类型                  setGameType(arg)
+// 2  种类选择 设置 游戏item                  setItemType(arg)
+// 3  游戏场景调用 getData   回答正确调用       addRecord()
+// 4  游戏退出 保存数据                         saveRecord()
+
+// 新增 物品 需添加 plist文件内容 以及 getItemNameFromType 借口 内容;  后期更改
+
 #include "GameData.hpp"
 
 string itemArr[] = {"Animal","Fruit"};
+
+GameData* GameData::m_pInstance = nullptr;
+
+GameData* GameData::getInstance(){
+    if (!m_pInstance) {
+        m_pInstance = new GameData();
+    }
+    return m_pInstance;
+}
+
 
 GameData::GameData(){
     m_KeyRoot = FileUtils::getInstance()->getValueMapFromFile("key.plist");
     m_ListenRoot = FileUtils::getInstance()->getValueMapFromFile("path.plist");
     m_SelectRoot = FileUtils::getInstance()->getValueMapFromFile("words.plist");
     m_ChineseRoot = FileUtils::getInstance()->getValueMapFromFile("message.plist");
-    m_RecordRoot = FileUtils::getInstance()->getValueMapFromFile("record.plist");
+    m_RecordRoot = FileUtils::getInstance()->getValueMapFromFile(xFile->getWritablePath() + "record.plist");
     
 }
 
@@ -26,26 +43,26 @@ void GameData::setGameType(GameType type){
 void GameData::setItemType(ItemType type){
     m_ItemType = type;
     
-    auto kinds = m_KeyRoot[getItemNameFromType(m_ItemType)].asValueVector();
-    for (auto e : kinds) {
-        m_vItemsType.push_back(e.asString());
+    log("%s",getItemNameFromType(m_ItemType).c_str());
+    //auto kinds = m_KeyRoot[getItemNameFromType(m_ItemType)].asValueVector();
+    for (auto e : m_KeyRoot) {
+        m_vItemsType.push_back(e.first);
     }
     
     if (!isRecordExit()) {
-        log("不存在历史记录");
+        log("--------------不存在历史记录-----------------");
         m_iRecord = 0;
     }
     else
     {
-        auto record_root = FileUtils::getInstance()->getValueMapFromFile("record.plist");
         for (auto e : m_vItemsType) {
-            Value data = m_RecordRoot[e.c_str()];
+            auto data = m_RecordRoot[e].asInt();
             ValueMap ret;
             ret[e.c_str()] = data;
             
             // 初始化 历史记录
             if(getItemNameFromType(m_ItemType) == e.c_str()){
-                m_iRecord = data.asInt();
+                m_iRecord = data;
             }
         }
     }
@@ -66,25 +83,26 @@ string GameData::getItemNameFromType(ItemType type){
 
 string GameData::getCorrectWords(){
     auto kinds = m_KeyRoot[getItemNameFromType(m_ItemType)].asValueVector();
+    //log("--------------正确的 %s----------------", kinds.at(m_iRecord).asString().c_str());
     return kinds.at(m_iRecord).asString();
 }
 //      gametype    itemtype   data
 string GameData::getData(){
-    
+    string data;
     if (m_GameType == kListenType) {
-        return getListenData();
+        data =  getListenData();
     }
     else if (m_GameType == kViewType){
-        return getViewData();
+        data =  getViewData();
     }
     else if (m_GameType == kChineseType){
-        return getChineseData();
+        data =  getChineseData();
     }
     else
     {
-        return getSelectData();
+        data =  getSelectData();
     }
-    
+    return data;
 }
 
 string GameData::getSelectData(){
@@ -109,20 +127,22 @@ string GameData::getChineseData(){
 }
 
 void GameData::saveRecord(){
-    this->removeRocord();
+    //this->removeRocord();
     
     ValueMap record;
-    for (auto e : m_vItemsType) {
-        if(getItemNameFromType(m_ItemType) == e.c_str()){
-            record[e] = m_iRecord;
-        }else
+    for (auto e : m_KeyRoot) {
+        if(getItemNameFromType(m_ItemType) == e.first){
+            record[e.first] = m_iRecord;
+        }
+        else
         {
-            record[e] = m_RecordRoot[e.c_str()];
+            record[e.first] = m_RecordRoot[e.first].asInt() ? m_RecordRoot[e.first].asInt() : 0;
+            
         }
     }
     
     auto fullPath = xFile->getWritablePath() + "record.plist";
-    log("数据存储位置: %s",fullPath.c_str());
+    log("---------数据存储位置: %s-----------",fullPath.c_str());
     if(xFile->writeToFile(record, fullPath)){
         log("保存成功");
     }
@@ -131,7 +151,7 @@ void GameData::saveRecord(){
 bool GameData::isRecordExit(){
     auto writePath = xFile->getWritablePath() + "record.plist";
     
-    log("数据位置: %s",writePath.c_str());
+    log("----------数据位置: %s------------",writePath.c_str());
     return xFile->isFileExist(writePath);
 }
 
@@ -143,6 +163,13 @@ void GameData::removeRocord(){
     }
 }
 
+bool GameData::isTrue(string words) {
+    if (this->getCorrectWords().compare(words) == 0) {
+        xData->addRecord();
+        return true;
+    }
+    return false;
+}
 
 
 

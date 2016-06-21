@@ -40,6 +40,7 @@
 		261A64A31D11015F00E63CAE /* studio in Resources */ = {isa = PBXBuildFile; fileRef = 261A649E1D11015F00E63CAE /* studio */; settings = {ASSET_TAGS = (); }; };
 		261A64A61D1144EF00E63CAE /* AudioController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64A41D1144EF00E63CAE /* AudioController.cpp */; settings = {ASSET_TAGS = (); }; };
 		261A64A81D1149E600E63CAE /* game in Resources */ = {isa = PBXBuildFile; fileRef = 261A64A71D1149E600E63CAE /* game */; settings = {ASSET_TAGS = (); }; };
+		2672BAF61D190DF50046852D /* KeyBoardLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2672BAF41D190DF50046852D /* KeyBoardLayer.cpp */; settings = {ASSET_TAGS = (); }; };
 		268675B71D1234EC0079A016 /* GameData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268675B51D1234EC0079A016 /* GameData.cpp */; settings = {ASSET_TAGS = (); }; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
@@ -294,6 +295,8 @@
 		261A64A41D1144EF00E63CAE /* AudioController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioController.cpp; sourceTree = "<group>"; };
 		261A64A51D1144EF00E63CAE /* AudioController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioController.hpp; sourceTree = "<group>"; };
 		261A64A71D1149E600E63CAE /* game */ = {isa = PBXFileReference; lastKnownFileType = folder; path = game; sourceTree = "<group>"; };
+		2672BAF41D190DF50046852D /* KeyBoardLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KeyBoardLayer.cpp; sourceTree = "<group>"; };
+		2672BAF51D190DF50046852D /* KeyBoardLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeyBoardLayer.hpp; sourceTree = "<group>"; };
 		268675B11D1233EE0079A016 /* Appconfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Appconfig.hpp; sourceTree = "<group>"; };
 		268675B51D1234EC0079A016 /* GameData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameData.cpp; sourceTree = "<group>"; };
 		268675B61D1234EC0079A016 /* GameData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameData.hpp; sourceTree = "<group>"; };
@@ -530,6 +533,8 @@
 				261A64841D10E2B600E63CAE /* Loading.hpp */,
 				261A64861D10E2C200E63CAE /* LoadingLayer.cpp */,
 				261A64871D10E2C200E63CAE /* LoadingLayer.hpp */,
+				2672BAF41D190DF50046852D /* KeyBoardLayer.cpp */,
+				2672BAF51D190DF50046852D /* KeyBoardLayer.hpp */,
 			);
 			name = Layer;
 			path = ../Classes/Layer;
@@ -943,6 +948,7 @@
 				26192E731D0FDAEF00C7A56E /* CBLayer.cpp in Sources */,
 				261A647C1D10E27000E63CAE /* ListenScene.cpp in Sources */,
 				261A64881D10E2C200E63CAE /* LoadingLayer.cpp in Sources */,
+				2672BAF61D190DF50046852D /* KeyBoardLayer.cpp in Sources */,
 				261A64821D10E28E00E63CAE /* ChineseScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				261A64771D10E26000E63CAE /* ViewScene.cpp in Sources */,

@@ -20,6 +20,7 @@ bool ChooseScene::init(){
         return false;
         
     }
+    
     return true;
 }
 

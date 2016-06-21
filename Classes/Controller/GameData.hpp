@@ -9,7 +9,6 @@
 #ifndef GameData_hpp
 #define GameData_hpp
 
-#include "SingleT.hpp"
 #include "cocos2d.h"
 #include "stdio.h"
 #include "Appconfig.hpp"
@@ -23,8 +22,11 @@ using namespace std;
 
 typedef  map<string, int>  gameType;
 
-class GameData : public SingleT<GameData>{
+class GameData{
 public:
+    
+    static GameData* getInstance();
+    
     GameData();
     
     void setGameType(GameType type);
@@ -53,8 +55,12 @@ public:
     
     bool isRecordExit();
     
+    bool isTrue(string words);
+    
     void removeRocord();
 private:
+    static GameData* m_pInstance;
+    
     ValueMap m_KeyRoot;
     
     ValueMap m_ListenRoot;

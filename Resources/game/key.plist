@@ -9,8 +9,8 @@
 	</array>
 	<key>Animal</key>
 	<array>
-		<string>cat</string>
 		<string>dog</string>
+		<string>cat</string>
 	</array>
 </dict>
 </plist>

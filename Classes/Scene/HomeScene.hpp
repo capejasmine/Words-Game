@@ -28,6 +28,7 @@ public:
     void onClick(Ref* ref, Widget::TouchEventType type);
 private:
     
+    Label* _lable;
 };
 
 #endif /* HomeScene_hpp */
