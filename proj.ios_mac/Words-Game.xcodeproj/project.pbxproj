@@ -18,30 +18,30 @@
 		1AC6FB31180E99EB004C840B /* libcocos2dx-extensions iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB09180E9839004C840B /* libcocos2dx-extensions iOS.a */; };
 		1AC6FB32180E99EB004C840B /* libCocosDenshion iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB0F180E9839004C840B /* libCocosDenshion iOS.a */; };
 		1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */; };
-		26192E651D0FB27B00C7A56E /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E631D0FB27B00C7A56E /* HomeScene.cpp */; settings = {ASSET_TAGS = (); }; };
-		26192E681D0FB29F00C7A56E /* BaseLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E661D0FB29F00C7A56E /* BaseLayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		26192E6C1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E6A1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp */; settings = {ASSET_TAGS = (); }; };
-		26192E731D0FDAEF00C7A56E /* CBLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E711D0FDAEF00C7A56E /* CBLayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		26192E761D0FF48200C7A56E /* UIButtonLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E741D0FF48200C7A56E /* UIButtonLayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A64771D10E26000E63CAE /* ViewScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64751D10E26000E63CAE /* ViewScene.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A647C1D10E27000E63CAE /* ListenScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A647A1D10E27000E63CAE /* ListenScene.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A647F1D10E27C00E63CAE /* ChooseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A647D1D10E27C00E63CAE /* ChooseScene.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A64821D10E28E00E63CAE /* ChineseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64801D10E28E00E63CAE /* ChineseScene.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A64851D10E2B600E63CAE /* Loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64831D10E2B600E63CAE /* Loading.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A64881D10E2C200E63CAE /* LoadingLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64861D10E2C200E63CAE /* LoadingLayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A648B1D10E2D400E63CAE /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64891D10E2D400E63CAE /* GameController.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A648F1D10E31300E63CAE /* UITools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A648D1D10E31300E63CAE /* UITools.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A64921D10E72400E63CAE /* SelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64901D10E72400E63CAE /* SelectScene.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A64961D10EDAD00E63CAE /* UtilSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64941D10EDAD00E63CAE /* UtilSet.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A649F1D11015F00E63CAE /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 261A649A1D11015F00E63CAE /* fonts */; settings = {ASSET_TAGS = (); }; };
-		261A64A01D11015F00E63CAE /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 261A649B1D11015F00E63CAE /* particle */; settings = {ASSET_TAGS = (); }; };
-		261A64A11D11015F00E63CAE /* public in Resources */ = {isa = PBXBuildFile; fileRef = 261A649C1D11015F00E63CAE /* public */; settings = {ASSET_TAGS = (); }; };
-		261A64A21D11015F00E63CAE /* sound in Resources */ = {isa = PBXBuildFile; fileRef = 261A649D1D11015F00E63CAE /* sound */; settings = {ASSET_TAGS = (); }; };
-		261A64A31D11015F00E63CAE /* studio in Resources */ = {isa = PBXBuildFile; fileRef = 261A649E1D11015F00E63CAE /* studio */; settings = {ASSET_TAGS = (); }; };
-		261A64A61D1144EF00E63CAE /* AudioController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64A41D1144EF00E63CAE /* AudioController.cpp */; settings = {ASSET_TAGS = (); }; };
-		261A64A81D1149E600E63CAE /* game in Resources */ = {isa = PBXBuildFile; fileRef = 261A64A71D1149E600E63CAE /* game */; settings = {ASSET_TAGS = (); }; };
-		2672BAF61D190DF50046852D /* KeyBoardLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2672BAF41D190DF50046852D /* KeyBoardLayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		268675B71D1234EC0079A016 /* GameData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268675B51D1234EC0079A016 /* GameData.cpp */; settings = {ASSET_TAGS = (); }; };
+		26192E651D0FB27B00C7A56E /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E631D0FB27B00C7A56E /* HomeScene.cpp */; };
+		26192E681D0FB29F00C7A56E /* BaseLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E661D0FB29F00C7A56E /* BaseLayer.cpp */; };
+		26192E6C1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E6A1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp */; };
+		26192E731D0FDAEF00C7A56E /* CBLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E711D0FDAEF00C7A56E /* CBLayer.cpp */; };
+		26192E761D0FF48200C7A56E /* UIButtonLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26192E741D0FF48200C7A56E /* UIButtonLayer.cpp */; };
+		261A64771D10E26000E63CAE /* ViewScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64751D10E26000E63CAE /* ViewScene.cpp */; };
+		261A647C1D10E27000E63CAE /* ListenScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A647A1D10E27000E63CAE /* ListenScene.cpp */; };
+		261A647F1D10E27C00E63CAE /* ChooseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A647D1D10E27C00E63CAE /* ChooseScene.cpp */; };
+		261A64821D10E28E00E63CAE /* ChineseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64801D10E28E00E63CAE /* ChineseScene.cpp */; };
+		261A64851D10E2B600E63CAE /* Loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64831D10E2B600E63CAE /* Loading.cpp */; };
+		261A64881D10E2C200E63CAE /* LoadingLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64861D10E2C200E63CAE /* LoadingLayer.cpp */; };
+		261A648B1D10E2D400E63CAE /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64891D10E2D400E63CAE /* GameController.cpp */; };
+		261A648F1D10E31300E63CAE /* UITools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A648D1D10E31300E63CAE /* UITools.cpp */; };
+		261A64921D10E72400E63CAE /* SelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64901D10E72400E63CAE /* SelectScene.cpp */; };
+		261A64961D10EDAD00E63CAE /* UtilSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64941D10EDAD00E63CAE /* UtilSet.cpp */; };
+		261A649F1D11015F00E63CAE /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 261A649A1D11015F00E63CAE /* fonts */; };
+		261A64A01D11015F00E63CAE /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 261A649B1D11015F00E63CAE /* particle */; };
+		261A64A11D11015F00E63CAE /* public in Resources */ = {isa = PBXBuildFile; fileRef = 261A649C1D11015F00E63CAE /* public */; };
+		261A64A21D11015F00E63CAE /* sound in Resources */ = {isa = PBXBuildFile; fileRef = 261A649D1D11015F00E63CAE /* sound */; };
+		261A64A31D11015F00E63CAE /* studio in Resources */ = {isa = PBXBuildFile; fileRef = 261A649E1D11015F00E63CAE /* studio */; };
+		261A64A61D1144EF00E63CAE /* AudioController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64A41D1144EF00E63CAE /* AudioController.cpp */; };
+		261A64A81D1149E600E63CAE /* game in Resources */ = {isa = PBXBuildFile; fileRef = 261A64A71D1149E600E63CAE /* game */; };
+		2672BAF61D190DF50046852D /* KeyBoardLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2672BAF41D190DF50046852D /* KeyBoardLayer.cpp */; };
+		268675B71D1234EC0079A016 /* GameData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268675B51D1234EC0079A016 /* GameData.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -782,7 +782,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = MDDB52YB8L;
+						DevelopmentTeam = UQ6SNU9CD4;
 					};
 				};
 			};
@@ -1026,6 +1026,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1054,6 +1055,8 @@
 					"-ObjC",
 					"-lxml2",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangwen.wordgame;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1066,6 +1069,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1092,6 +1096,8 @@
 					"-ObjC",
 					"-lxml2",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangwen.wordgame;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";

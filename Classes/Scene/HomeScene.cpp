@@ -9,6 +9,7 @@
 #include "HomeScene.hpp"
 #include "GameData.hpp"
 
+
 Scene* HomeScene::scene(){
     Scene* scene = Scene::create();
     HomeScene* layer = HomeScene::create();
@@ -34,27 +35,35 @@ bool HomeScene::init(){
     
     Button* btn1 = Button::create("popup_ok_default.png");
     btn1->addTouchEventListener(CC_CALLBACK_2(HomeScene::onClick, this));
-    btn1->setPosition(Vec2(200, 200));
+    btn1->setPosition(Vec2(200, 500));
     btn1->setName("start");
     addChild(btn1);
     
     Button* btn2 = Button::create("popup_cancel_default.png");
     btn2->addTouchEventListener(CC_CALLBACK_2(HomeScene::onClick, this));
-    btn2->setPosition(Vec2(400, 200));
+    btn2->setPosition(Vec2(400, 500));
     btn2->setName("save");
     addChild(btn2);
     
     Button* btn3 = Button::create("popup_cancel_default.png");
     btn3->addTouchEventListener(CC_CALLBACK_2(HomeScene::onClick, this));
-    btn3->setPosition(Vec2(600, 200));
+    btn3->setPosition(Vec2(600, 500));
     btn3->setName("save1");
     addChild(btn3);
     
     xData->setGameType(GameType::kChineseType);
     xData->setItemType(ItemType::kAnimal);
 
+    m_layer = KeyBoardLayer::create();
+    this->addChild(m_layer,1000);
+    
+    m_layer->setTouchEvent(CC_CALLBACK_1(HomeScene::keyBoardOnClick, this));
     
     return true;
+}
+
+void HomeScene::keyBoardOnClick(string s){
+    log("touch =  %s",s.c_str());
 }
 
 void HomeScene::initUI(){
@@ -70,15 +79,17 @@ void HomeScene::onClick(Ref* ref, Widget::TouchEventType type){
     string name = target->getName();
     if (name.compare("start") == 0) {
         //xGAME->enterChooseScene();
-        string data = xData->getData();
-        _lable->setString(data);
+//        string data = xData->getData();
+//        _lable->setString(data);
+        m_layer->showFromBottom();
+        
     }
     if (name.compare("save") == 0) {
-        
-        xData->addRecord();
-        
-        string data = xData->getData();
-        _lable->setString(data);
+        m_layer->hideToBottom();
+//        xData->addRecord();
+//        
+//        string data = xData->getData();
+//        _lable->setString(data);
     }
     
     if (name.compare("save1") == 0) {

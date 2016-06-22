@@ -21,3 +21,5 @@ Vec2 rotateWithDegree(Vec2 &point, float fDegree);
 int cycleNum(int iCount, bool bAdd, int *idx);
 int quickRandom(int min, int max);
 float quickRandomFloat(float min, float max);
+
+void showFromButton(Widget* a, Vec2 origin, Vec2 aim, float time);

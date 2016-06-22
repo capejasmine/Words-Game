@@ -11,6 +11,7 @@
 
 #include "BaseLayer.hpp"
 #include "UtilSet.hpp"
+#include "KeyBoardLayer.hpp"
 
 
 class HomeScene : public BaseLayer{
@@ -26,9 +27,13 @@ public:
     void initUI();
     
     void onClick(Ref* ref, Widget::TouchEventType type);
+    
+    void keyBoardOnClick(string s);
 private:
     
     Label* _lable;
+    
+    KeyBoardLayer* m_layer;
 };
 
 #endif /* HomeScene_hpp */
