@@ -43,7 +43,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     paths.push_back("game/select/");
     paths.push_back("game/view/");
     paths.push_back("game");
-    
+    //Director::getInstance()->setProjection( Director::Projection::_2D );
     
     FileUtils::getInstance()->setSearchPaths(paths);
 

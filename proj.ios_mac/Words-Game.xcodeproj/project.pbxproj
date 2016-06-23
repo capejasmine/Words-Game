@@ -41,6 +41,7 @@
 		261A64A61D1144EF00E63CAE /* AudioController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261A64A41D1144EF00E63CAE /* AudioController.cpp */; };
 		261A64A81D1149E600E63CAE /* game in Resources */ = {isa = PBXBuildFile; fileRef = 261A64A71D1149E600E63CAE /* game */; };
 		2672BAF61D190DF50046852D /* KeyBoardLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2672BAF41D190DF50046852D /* KeyBoardLayer.cpp */; };
+		267C3DC71D1BD4D800B46B2F /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 267C3DC61D1BD4D800B46B2F /* libcurl.a */; };
 		268675B71D1234EC0079A016 /* GameData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268675B51D1234EC0079A016 /* GameData.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
@@ -90,7 +91,6 @@
 		A22E7BF21B5E249F0005A90A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22E7BE81B5E249F0005A90A /* OpenAL.framework */; };
 		A22E7BF31B5E249F0005A90A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22E7BE91B5E249F0005A90A /* OpenGLES.framework */; };
 		A22E7BF51B5E249F0005A90A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22E7BEB1B5E249F0005A90A /* UIKit.framework */; };
-		A22E7BF71B5E24CA0005A90A /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A22E7BF61B5E24CA0005A90A /* libcurl.a */; };
 		A24DD9981BFB070F00F1E5E0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24DD9971BFB070F00F1E5E0 /* Social.framework */; };
 		A24DD99A1BFB075B00F1E5E0 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24DD9991BFB075B00F1E5E0 /* Twitter.framework */; };
 		A24DD99C1BFB076F00F1E5E0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24DD99B1BFB076F00F1E5E0 /* CFNetwork.framework */; };
@@ -297,6 +297,8 @@
 		261A64A71D1149E600E63CAE /* game */ = {isa = PBXFileReference; lastKnownFileType = folder; path = game; sourceTree = "<group>"; };
 		2672BAF41D190DF50046852D /* KeyBoardLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KeyBoardLayer.cpp; sourceTree = "<group>"; };
 		2672BAF51D190DF50046852D /* KeyBoardLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeyBoardLayer.hpp; sourceTree = "<group>"; };
+		267C3DC61D1BD4D800B46B2F /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../cocos2dx/cocos2d/external/curl/prebuilt/ios/libcurl.a; sourceTree = "<group>"; };
+		267C3DCA1D1BD54000B46B2F /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebsockets.a; path = ../cocos2dx/cocos2d/external/websockets/prebuilt/ios/libwebsockets.a; sourceTree = "<group>"; };
 		268675B11D1233EE0079A016 /* Appconfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Appconfig.hpp; sourceTree = "<group>"; };
 		268675B51D1234EC0079A016 /* GameData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameData.cpp; sourceTree = "<group>"; };
 		268675B61D1234EC0079A016 /* GameData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameData.hpp; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				267C3DC71D1BD4D800B46B2F /* libcurl.a in Frameworks */,
 				A22CC1E61C03F7EC00B94252 /* Foundation.framework in Frameworks */,
 				A24DD9B01BFB081E00F1E5E0 /* AVFoundation.framework in Frameworks */,
 				A24DD9AE1BFB081500F1E5E0 /* AudioToolbox.framework in Frameworks */,
@@ -408,7 +411,6 @@
 				A22E7BD01B5E12750005A90A /* CoreData.framework in Frameworks */,
 				A22E7BF21B5E249F0005A90A /* OpenAL.framework in Frameworks */,
 				A22E7BCF1B5E12750005A90A /* CFNetwork.framework in Frameworks */,
-				A22E7BF71B5E24CA0005A90A /* libcurl.a in Frameworks */,
 				A22E7BD21B5E12750005A90A /* CoreLocation.framework in Frameworks */,
 				A22E7BD81B5E12750005A90A /* MediaPlayer.framework in Frameworks */,
 				A22E7BEF1B5E249F0005A90A /* CoreMotion.framework in Frameworks */,
@@ -609,6 +611,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				267C3DCA1D1BD54000B46B2F /* libwebsockets.a */,
+				267C3DC61D1BD4D800B46B2F /* libcurl.a */,
 				A22CC1E51C03F7EC00B94252 /* Foundation.framework */,
 				A24DD9AF1BFB081E00F1E5E0 /* AVFoundation.framework */,
 				A24DD9AD1BFB081500F1E5E0 /* AudioToolbox.framework */,
@@ -1044,9 +1048,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../Classes",
+					"$(SRCROOT)/../external",
 					"$(SRCROOT)/../cocos2dx/cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2dx/cocos2d/cocos/platform/ios/Simulation",
 					/usr/include/libxml2,
+					"$(SRCROOT)/../cocos2d/external/curl/include/ios/curl",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1085,9 +1091,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../Classes",
+					"$(SRCROOT)/../external",
 					"$(SRCROOT)/../cocos2dx/cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2dx/cocos2d/cocos/platform/ios/Simulation",
 					/usr/include/libxml2,
+					"$(SRCROOT)/../cocos2d/external/curl/include/ios/curl",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1183,6 +1191,7 @@
 					"$(SRCROOT)/../cocos2dx/cocos2d/extensions",
 					"$(SRCROOT)/../cocos2dx/cocos2d/external",
 					"$(SRCROOT)/../cocos2dx/cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../cocos2dx/cocos2d/external/curl/include/ios/curl",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1212,6 +1221,7 @@
 					"$(SRCROOT)/../cocos2dx/cocos2d/extensions",
 					"$(SRCROOT)/../cocos2dx/cocos2d/external",
 					"$(SRCROOT)/../cocos2dx/cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../cocos2dx/cocos2d/external/curl/include/ios/curl",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";

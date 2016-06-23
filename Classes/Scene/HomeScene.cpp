@@ -8,6 +8,9 @@
 
 #include "HomeScene.hpp"
 #include "GameData.hpp"
+#include "stdio.h"
+#include "stdlib.h"
+#include "curl.h"
 
 
 Scene* HomeScene::scene(){
@@ -26,12 +29,7 @@ bool HomeScene::init(){
     this->setBackGround("bg.png");
     //initUI();
     
-    _lable = Label::create();
-    _lable->setPosition(Director::getInstance()->getWinSize()/2);
-    _lable->setSystemFontSize(40);
-    _lable->setSystemFontName("Ready");
-    _lable->setTextColor(cocos2d::Color4B(255, 255, 255, 255));
-    this->addChild(_lable);
+
     
     Button* btn1 = Button::create("popup_ok_default.png");
     btn1->addTouchEventListener(CC_CALLBACK_2(HomeScene::onClick, this));
@@ -53,6 +51,13 @@ bool HomeScene::init(){
     
     xData->setGameType(GameType::kChineseType);
     xData->setItemType(ItemType::kAnimal);
+    
+    m_lable = Label::create();
+    m_lable->setPosition(xDirector->getWinSize()/2);
+    m_lable->setSystemFontSize(50);
+    m_lable->setSystemFontName("Marker Felt.ttf");
+    m_lable->setAnchorPoint(Point::ANCHOR_MIDDLE_LEFT);
+    this->addChild(m_lable);
 
     m_layer = KeyBoardLayer::create();
     this->addChild(m_layer,1000);
@@ -64,6 +69,25 @@ bool HomeScene::init(){
 
 void HomeScene::keyBoardOnClick(string s){
     log("touch =  %s",s.c_str());
+    string content = m_lable->getString();
+    if(s.compare("backspace") == 0){
+        if(content.length() != 0){
+            content.erase(content.end() - 1);
+            m_lable->setString(content);
+        }
+    }
+    else
+    {
+        if(content.length() > 12){
+            log("超过对最大限度");
+            return;
+        }
+        else
+        {
+            string new_content = content + s;
+            m_lable->setString(new_content);
+        }
+    }
 }
 
 void HomeScene::initUI(){
@@ -79,9 +103,12 @@ void HomeScene::onClick(Ref* ref, Widget::TouchEventType type){
     string name = target->getName();
     if (name.compare("start") == 0) {
         //xGAME->enterChooseScene();
-//        string data = xData->getData();
-//        _lable->setString(data);
-        m_layer->showFromBottom();
+        string data = xData->getData();
+        if(m_lable->getString().compare(xData->getCorrectWords()) == 0){
+            log("pass");
+            xData->addRecord();
+            m_lable->setString("");
+        }
         
     }
     if (name.compare("save") == 0) {
@@ -93,7 +120,8 @@ void HomeScene::onClick(Ref* ref, Widget::TouchEventType type){
     }
     
     if (name.compare("save1") == 0) {
-        xData->saveRecord();
+        m_layer->showFromBottom();
+        //xData->saveRecord();
     }
 
 }

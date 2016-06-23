@@ -31,7 +31,7 @@ public:
     void keyBoardOnClick(string s);
 private:
     
-    Label* _lable;
+    Label* m_lable;
     
     KeyBoardLayer* m_layer;
 };
