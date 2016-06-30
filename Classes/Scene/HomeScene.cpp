@@ -11,6 +11,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "curl.h"
+#include "UIListView.hpp"
 
 
 Scene* HomeScene::scene(){
@@ -55,12 +56,30 @@ bool HomeScene::init(){
     m_lable = Label::create();
     m_lable->setPosition(xDirector->getWinSize()/2);
     m_lable->setSystemFontSize(50);
-    m_lable->setSystemFontName("Marker Felt.ttf");
+    m_lable->setSystemFontName("comic andy.ttf");
     m_lable->setAnchorPoint(Point::ANCHOR_MIDDLE_LEFT);
     this->addChild(m_lable);
 
     m_layer = KeyBoardLayer::create();
     this->addChild(m_layer,1000);
+    
+    UIListView* m_listiview = UIListView::create();
+    m_listiview->setPosition(xDirector->getVisibleSize()/2);
+    addChild(m_listiview);
+    
+    m_listiview->setItemsMargin(50);
+    m_listiview->setDirection(cocos2d::ui::ScrollView::Direction::HORIZONTAL);
+    m_listiview->setBounceEnabled(false);
+    m_listiview->setClippingEnabled(false);
+    m_listiview->setContentSize(xDirector->getVisibleSize()/2);
+    
+    
+    
+    for (int i = 0; i < 5; i++) {
+        auto btn = Button::create("popup_ok_default.png");
+        m_listiview->insertCustomItem(btn, i);
+    }
+    
     
     m_layer->setTouchEvent(CC_CALLBACK_1(HomeScene::keyBoardOnClick, this));
     

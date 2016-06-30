@@ -43,6 +43,7 @@
 		2672BAF61D190DF50046852D /* KeyBoardLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2672BAF41D190DF50046852D /* KeyBoardLayer.cpp */; };
 		267C3DC71D1BD4D800B46B2F /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 267C3DC61D1BD4D800B46B2F /* libcurl.a */; };
 		268675B71D1234EC0079A016 /* GameData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268675B51D1234EC0079A016 /* GameData.cpp */; };
+		2693A14A1D20DE9B000A15F9 /* UIListView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2693A1481D20DE9B000A15F9 /* UIListView.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -302,6 +303,8 @@
 		268675B11D1233EE0079A016 /* Appconfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Appconfig.hpp; sourceTree = "<group>"; };
 		268675B51D1234EC0079A016 /* GameData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameData.cpp; sourceTree = "<group>"; };
 		268675B61D1234EC0079A016 /* GameData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameData.hpp; sourceTree = "<group>"; };
+		2693A1481D20DE9B000A15F9 /* UIListView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIListView.cpp; sourceTree = "<group>"; };
+		2693A1491D20DE9B000A15F9 /* UIListView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UIListView.hpp; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -574,6 +577,8 @@
 				26192E6A1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp */,
 				26192E6B1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.hpp */,
 				26192E6E1D0FB89F00C7A56E /* SingleT.hpp */,
+				2693A1481D20DE9B000A15F9 /* UIListView.cpp */,
+				2693A1491D20DE9B000A15F9 /* UIListView.hpp */,
 			);
 			name = Widget;
 			path = ../Classes/Widget;
@@ -940,6 +945,7 @@
 				261A648B1D10E2D400E63CAE /* GameController.cpp in Sources */,
 				268675B71D1234EC0079A016 /* GameData.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				2693A14A1D20DE9B000A15F9 /* UIListView.cpp in Sources */,
 				26192E6C1D0FB7E500C7A56E /* KeypadBoardDispatchCenter.cpp in Sources */,
 				261A64961D10EDAD00E63CAE /* UtilSet.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -1052,7 +1058,6 @@
 					"$(SRCROOT)/../cocos2dx/cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2dx/cocos2d/cocos/platform/ios/Simulation",
 					/usr/include/libxml2,
-					"$(SRCROOT)/../cocos2d/external/curl/include/ios/curl",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1095,7 +1100,6 @@
 					"$(SRCROOT)/../cocos2dx/cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2dx/cocos2d/cocos/platform/ios/Simulation",
 					/usr/include/libxml2,
-					"$(SRCROOT)/../cocos2d/external/curl/include/ios/curl",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
